@@ -6,7 +6,7 @@ import Cart from "../cart/index";
 
 // Styles
 import * as Styles from "./styles";
-import {loginUser,logoutUser} from "../../user/actions";
+import {loginUser,logoutUser} from "../../redux/user/actions";
 
 function Header() {
   const [cartIsVisible, setCartIsVisible] = useState(false);
