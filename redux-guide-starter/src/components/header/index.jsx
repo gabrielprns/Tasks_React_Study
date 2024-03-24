@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState} from "react";
 import { useSelector,useDispatch } from "react-redux";
 
 // Components
@@ -12,6 +12,8 @@ function Header() {
   const [cartIsVisible, setCartIsVisible] = useState(false);
 
   const {currentUser} = useSelector((rootReducer)=> rootReducer.userReducer);
+  
+  
   const dispatch = useDispatch();
   console.log({currentUser})
   
